@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/customWidget/GamniDrawer.dart';
 
 void main()
 {
@@ -22,6 +23,7 @@ class _HomePageState extends State<HomePage>
     {
       return Scaffold(
         appBar: new AppBar(
+          elevation: 0,
           title: Text('Gamni'),
           backgroundColor: Colors.indigo,
           actions: [
@@ -29,7 +31,7 @@ class _HomePageState extends State<HomePage>
             new IconButton(icon:Icon (Icons.shopping_cart,color: Colors.white,), onPressed: (){}),
           ],
         ),
-        drawer: Drawer()
+        drawer: GamniDrawer()
       );
     }
 
