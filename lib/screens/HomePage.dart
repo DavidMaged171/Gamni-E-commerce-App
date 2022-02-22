@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/customWidget/GamniDrawer.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter_app/customWidget/horizontalList.dart';
+import 'package:flutter_app/customWidget/product.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,19 +15,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
+
         elevation: 0,
         title: Text('Gamni'),
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.red,
         actions: [
           new IconButton(
               icon: Icon(
                 Icons.search,
-                color: Colors.white,
-              ),
-              onPressed: () {}),
-          new IconButton(
-              icon: Icon(
-                Icons.shopping_cart,
                 color: Colors.white,
               ),
               onPressed: () {}),
@@ -49,6 +45,11 @@ class _HomePageState extends State<HomePage> {
                 Categoryy("Pants", "lib/images/pants.png"),
               ],
             ),
+
+          ),
+          Container(
+            height: 320,
+            child: Products(),
           ),
         ],
       ),
@@ -70,7 +71,7 @@ Widget getImageCarousel() {
       autoplay: true,
       dotSize: 5,
       indicatorBgPadding: 2,
-      dotColor: Colors.red,
+      dotColor: Colors.transparent,
       //animationCurve: Curves.fastOutSlowIn,
       //animationDuration: Duration(milliseconds: 100),
     ),
