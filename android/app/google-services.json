@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276131060259",
+    "project_id": "gamni-e-commerce",
+    "storage_bucket": "gamni-e-commerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276131060259:android:3fe604b5ed43fe70ff6f96",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276131060259-5q5q8o0p1hqtvetuhq6lg7uupt03q9kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMdJAeJY9-mtN5dOjDDwI8MhE9n2a1h2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276131060259-5q5q8o0p1hqtvetuhq6lg7uupt03q9kb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
