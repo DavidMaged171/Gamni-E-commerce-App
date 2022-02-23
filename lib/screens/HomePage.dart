@@ -1,9 +1,9 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/customWidget/GamniDrawer.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter_app/customWidget/horizontalList.dart';
 import 'package:flutter_app/customWidget/product.dart';
+import 'cart.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -26,6 +26,14 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.white,
               ),
               onPressed: () {}),
+          new IconButton(
+              icon: Icon(
+                Icons.shopping_cart,
+                color: Colors.white,
+              ),
+              onPressed: () {
+                navigateToCart();
+              }),
         ],
       ),
       drawer: GamniDrawer(),
@@ -54,6 +62,10 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
     );
+  }
+  void navigateToCart()
+  {
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
   }
 }
 

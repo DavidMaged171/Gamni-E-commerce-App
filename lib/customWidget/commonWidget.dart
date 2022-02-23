@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+
 Widget getImageCarousel() {
   Widget image_carousel = new Container(
     height: 200,
@@ -20,4 +21,15 @@ Widget getImageCarousel() {
     ),
   );
   return image_carousel;
+}
+
+Widget customText(String text,double fontSize,Color color) {
+  return Text(
+    text,
+    style: TextStyle(
+      fontSize: fontSize,
+      color: color,
+      fontWeight: FontWeight.bold,
+    ),
+  );
 }
